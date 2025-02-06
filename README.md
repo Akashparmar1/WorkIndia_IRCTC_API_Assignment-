@@ -165,7 +165,7 @@ npm start or node index.js
 
 ```bash
  {
-  "name": "Jammisetti Yoganand",
+  "name": "Akash PArmar",
   "email": "jammisettyyoganand@gmail.com",
   "password": "Yogi@2003",
   "role":"admin" // or user
