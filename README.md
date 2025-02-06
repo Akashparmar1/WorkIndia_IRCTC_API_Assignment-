@@ -370,7 +370,7 @@ Feel free to fork the repository and make your contributions. Any suggestions or
 
 #### 1. Database Creation
 
-![Database Creation Screenshot](./API_Backend/Photos/Creating_Tables.jpg)
+![Database Creation Screenshot](./API_Backend/Photos/Creating_Tables.png)
 
 Description: This screenshot showcases the creation of the database schema and tables for the IRCTC system.
 
@@ -378,7 +378,7 @@ Description: This screenshot showcases the creation of the database schema and t
 
 #### 2. User Database
 
-![User Database Screenshot](./API_Backend/Photos/User_Database.jpg)
+![User Database Screenshot](./API_Backend/Photos/User_Database.png)
 
 Description: The structure and data stored in the `users` table of the `irctc_db` database.
 
@@ -386,14 +386,14 @@ Description: The structure and data stored in the `users` table of the `irctc_db
 
 #### 3. User Bookings
 
-![User Bookings Screenshot](./API_Backend/Photos/Retrive_bookings.jpg)
+![User Bookings Screenshot](./API_Backend/Photos/Retrive_bookings.png)
 
 Description: The Bookings done by the User
 
 ---
 #### 4. Admin Adding Train
 
-![Admin Adding Train Screenshot](./API_Backend/Photos/Retriving_added_trains.jpg)
+![Admin Adding Train Screenshot](./API_Backend/Photos/Retriving_added_trains.png)
 
 Description: Trains Added By the Admin
 
@@ -401,14 +401,14 @@ Description: Trains Added By the Admin
 
 #### 5. Total User Registered
 
-![Total User Registered Screenshot](./API_Backend/Photos/Retriving_users.jpg)
+![Total User Registered Screenshot](./API_Backend/Photos/Retriving_users.png)
 
 Description: Total Users Registerd till now
 
 ---
 #### 7. Workbench SQL View
 
-![Workbench SQL Screenshot](./API_Backend/Photos/Retriving_all_tables.jpg)
+![Workbench SQL Screenshot](./API_Backend/Photos/Retriving_all_tables.png)
 
 Description: An overview of the SQL queries and table structures in MySQL Workbench.
 
