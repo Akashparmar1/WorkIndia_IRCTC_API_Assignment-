@@ -1,6 +1,13 @@
 # IRCTC Railway Management System
 
-This project is a **Railway Management System** designed to replicate key functionalities of the IRCTC platform. It provides features like train seat booking, train availability checks, train management, and role-based access control for users and administrators. The backend is developed using **Node.js**, **Express.js**, and **MySQL**.
+This project is a **Railway Management System** that simulates the core functionalities of the IRCTC system. The system enables users to:
+
+- Book train tickets
+- Check train availability
+- Update train details
+- Implement role-based access for both users and administrators
+
+The backend is developed using **Node.js**, **Express.js**, and **MySQL** to ensure efficient and scalable performance.
 
 ---
 
@@ -59,14 +66,14 @@ DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your-sql-pssword
 DB_NAME=irctc_db
-JWT_SECRET=Yoganand
+JWT_SECRET=Akash_WorkIndia
 ```
 
 ### Installation
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/YOGANAND2003/IRCTC_API
+   git clone https://github.com/Akashparmar1/WorkIndia_IRCTC_API_Assignment
    cd API_Backend
    ```
 2. Install all necessary dependencies using npm:
@@ -76,6 +83,10 @@ JWT_SECRET=Yoganand
    ```
 
 3. Set up your MySQL database:
+
+  ```bash
+    npm install mysql
+   ```
 
 - Create a MySQL database named irctc_db.
 - Run the SQL scripts in database/schema.sql to create necessary tables (users, trains, bookings).
@@ -120,7 +131,7 @@ CREATE TABLE bookings (
 Once the setup is complete, start the server using npm:
 
 ```bash
-npm start or node index.js
+node index.js
 
 ```
 
@@ -161,14 +172,14 @@ npm start or node index.js
     1. Register a new user
        * HTTP Method :- POST
        * Endpoint :- http://localhost:3000/user/register
-       * Body:
+       * Body: json
 
 ```bash
  {
-  "name": "Jammisetti Yoganand",
-  "email": "jammisettyyoganand@gmail.com",
-  "password": "Yogi@2003",
-  "role":"admin" // or user
+  "name": "Akash PArmar",
+  "email": "akash24parmar@gmail.com",
+  "password": "Akash@2003",
+  "role":"admin" 
 }
 
 ```
@@ -180,18 +191,18 @@ npm start or node index.js
 
 ```bash
 {
-  "email": "jammisettyyoganand@gmail.com",
-  "password": "Yogi@2003"
+  "email": "akash24parmar@gmail.com",
+  "password": "Akash@2004"
 }
 ```
 
 3. Check train availability
 
    - HTTP Method :- GET
-   - Endpoint :- http://localhost:3000/user/availability?source=Pune&destination=Delhi
+   - Endpoint :- http://localhost:3000/user/availability?source=Pune&destination=Hydrabad
    - Query Parameters
      - source: Source station (e.g., "Pune")
-     - destination: Destination station (e.g., "Delhi")
+     - destination: Destination station (e.g., "Hydrabad")
    - Response:
 
 ```bash
@@ -200,7 +211,7 @@ npm start or node index.js
   "availableTrainCount": 1,
   "trains": [
     {
-      "trainNumber": "12345",
+      "trainNumber": "123456",
       "availableSeats": 90
     }
   ]
@@ -247,7 +258,7 @@ Note :- Requires JWT authentication.
         "number_of_seats": 2,
         "train_number": "12345",
         "source": "Pune",
-        "destination": "Delhi"
+        "destination": "Hydrabad"
     }
 ]
 
@@ -333,7 +344,7 @@ You can test all the available APIs using Postman. The endpoints are well-struct
   {
     "trainNumber": "10230",
     "source": "Hyderabad",
-    "destination": "Visakhapatnam",
+    "destination": "indore",
     "totalSeats": 300
   }
 ]
