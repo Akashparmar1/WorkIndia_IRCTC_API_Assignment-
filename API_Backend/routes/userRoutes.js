@@ -11,3 +11,5 @@ router.post('/login', authController.login);
 router.post('/book',  userAuthenticate, userController.bookSeat);
 router.get('/getAllbookings', userAuthenticate, userController.getBookingDetails);
 module.exports = router;
+
+
